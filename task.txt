@@ -1,0 +1,210 @@
+1. What is the primary purpose of Django serializers?
+A. To handle database migrations
+B. To validate data
+C. To convert complex data types to native Python data types
+D. To manage user authentication
+Ans: C
+
+2. Which module is commonly used for creating serializers in Django?
+A. django.db
+B. django.forms
+C. django.views
+D. rest_framework.serializers
+Ans: D
+
+3. How to import Django REST Framework's serializers?
+A. from django.rest.serializers import ModelSerializer
+B. from rest_framework import serializers
+C. from django.serializers import RESTFramework
+D. import serializers from rest_framework
+Ans: B
+
+4. Which class serializers that automatically generate fields from a Django model?
+A. Serializer
+B. HyperlinkedModelSerializer
+C. ModelSerializer
+D. FormSerializer
+Ans: C
+
+5. What method would you use for validation logic to a Django serializer?
+A. validate_fields
+B. is_valid
+C. validate
+D. clean
+Ans: C
+
+6. Which argument would you use to include only specific fields in a ModelSerializer?
+A. fields
+B. include
+C. only
+D. validate
+Ans: A
+
+7. Which HTTP method is used to retrieve data from a server in DRF?
+A. POST
+B. GET
+C. PUT
+D. DELETE
+Ans: B
+
+8. What is the primary purpose of the POST method in DRF?
+A. To update
+B. To delete
+C. To retrieve
+D. To create a new resource
+Ans: D
+
+9. Which method would you use to update an entire resource in DRF?
+A. PATCH
+B. PUT
+C. GET
+D. DELETE
+Ans: B
+
+10. How does the PATCH method differ from the PUT method in DRF?
+A. PATCH retrieves a resource, PUT retrieves multiple resources
+B. PATCH updates a resource partially, PUT updates a resource completely
+C. PATCH creates a new resource, PUT deletes a resource
+D. PATCH is used for authentication, PUT is used for authorization
+Ans: B
+
+11. Which HTTP method is used to delete a resource in DRF?
+A. GET
+B. POST
+C. DELETE
+D. PUT
+Ans: C
+
+12. Which of the following request methods would you use to retrieve a list of resources in DRF?
+A. PUT
+B. GET
+C. POST
+D. PATCH
+Ans: B
+
+13. What is the typical response status code for a successful DELETE request in DRF?
+A. 200 OK
+B. 201 Created
+C. 204 No Content
+D. 400 Bad Request
+Ans: C
+
+14. When a PUT request is made to update a resource, what happens if the resource does not exist?
+A. A new resource is created
+B. An error is returned
+C. The request is ignored
+D. The resource is deleted
+Ans: A
+
+15. How can you manually set a session variable in Django?
+A. request.set_session(key, value)
+B. request.session[key] = value
+C. request.set_cookie(key, value)
+D. request.session.set(key, value)
+Ans: B
+
+16. Which method would you use to clear all session data in Django?
+A. request.session.clear()
+B. request.session.flush()
+C. request.session.delete()
+D. request.session.destroy()
+Ans: B
+
+17. How can you check if a user is authenticated in a Django view?
+A. request.user.is_active
+B. request.user.is_authenticated
+C. request.user.is_staff
+D. request.user.is_superuser
+Ans: B
+
+18. Which decorator can be used to restrict access to a view to authenticated users only?
+A. @login_required
+B. @authenticated
+C. @user_passes_test
+D. @require_auth
+Ans: A
+
+19. What is the primary purpose of token authentication in Django?
+A. To manage user sessions
+B. To provide an authentication mechanism for APIs
+C. To handle file uploads securely
+D. To manage database migrations
+Ans: B
+
+20. Which package is commonly used to implement token authentication in Django?
+A. django.contrib.sessions
+B. django.contrib.auth
+C. rest_framework.authtoken
+D. django.middleware.csrf
+Ans: C
+
+21. Which model is used to store tokens in Django REST Framework's token authentication?
+A. Token
+B. AuthToken
+C. APIToken
+D. UserToken
+Ans: A
+
+22. How do you generate a token for a user in Django REST Framework?
+A. Token.objects.create(user=user)
+B. user.get_token()
+C. Token.create(user=user)
+D. Token.generate(user)
+Ans: A
+
+23. Which HTTP header is commonly used to pass the token in a request?
+A. X-Auth-Token
+B. Authorization
+C. Token
+D. Auth-Token
+Ans: B
+
+24. What type of token is used in Django REST Framework's default token authentication?
+A. JWT (JSON Web Token)
+B. Bearer Token
+C. API Key
+D. Simple string token
+Ans: D
+
+25. How can you configure a Django REST Framework view to use token authentication?
+A. Add rest_framework.authentication.TokenAuthentication to the DEFAULT_AUTHENTICATION_CLASSES setting
+B. Use @token_required decorator
+C. Set AUTHENTICATION_BACKENDS to TokenBackend
+D. Use TokenAuthentication middleware
+Ans: A
+
+26. What is the default behavior if a request with an invalid token is made to a DRF view?
+A. The request is processed but logged as a warning
+B. A 403 Forbidden
+C. A 401 Unauthorized
+D. The token is automatically refreshed
+Ans: C
+
+27. How do you delete a token when a user logs out in Django REST Framework?
+A. Token.objects.filter(user=user).delete()
+B. user.token.delete()
+C. Token.delete(user=user)
+D. user.auth_token.delete()
+Ans: A & D
+
+28. Which command is used to install Django REST Framework's token authentication module?
+A. pip install djangorestframework
+B. pip install djangorestframework-token
+C. pip install drf-token
+D. pip install djangorestframework.authtoken
+Ans: A
+
+29. Which storage method can store a larger amount of data (up to 5-10 MB) on the client side?
+A. Cookies
+B. localStorage
+C. sessionStorage
+D. HTTP Headers
+Ans: B
+
+30. Which method persists data even after the browser is closed and reopened?
+A. Cookies
+B. localStorage
+C. sessionStorage
+D. In-memory storage
+Ans: B
+
